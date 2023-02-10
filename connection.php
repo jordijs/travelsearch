@@ -8,9 +8,6 @@ try {
 
     $dbh = new PDO($dblink, $dbuser, $dbpassword);
 
-    echo 'Connected';
-
-
 }catch (PDOexception $error) {
     print $error->getMessage();
     die();
